@@ -1,0 +1,37 @@
+server:
+  port: 8089
+spring:
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+    show-sql: true
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/my_contest?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=GMT%2b8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # REDIS (RedisProperties)
+    # Redis数据库索引（默认为0）
+    # REDIS (RedisProperties)
+    # Redis数据库索引（默认为0）
+    #redis
+  redis:
+      #redis机器ip172.16.215.131
+      host: 127.0.0.1
+      #redis端口
+      port: 6379
+      #redis密码
+      password:
+      #redis超时时间（毫秒），如果不设置，取默认值2000
+      timeout: 10000
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
