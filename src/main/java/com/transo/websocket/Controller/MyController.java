@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*")
 @RestController
-@Api(value = "总工会比赛操作分支测试master", tags = "总工会比赛操作")
+@Api(value = "总工会比赛操作", tags = "总工会比赛操作")
 public class MyController {
     @Autowired
     private UsersRepository usersRepository;
