@@ -53,7 +53,7 @@ public class MyController {
      */
     @Transactional
     @PostMapping(value = "/putInfo")
-    @ApiOperation(value = "远程调用接口")
+    @ApiOperation(value = "远程调用接口tcshao")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "body", name = "id", value = "参赛者ID", required = true, dataType = "Integer"),
             @ApiImplicitParam(paramType = "body", name = "nowRound", value = "当前关卡", required = true, dataType = "Integer"),
