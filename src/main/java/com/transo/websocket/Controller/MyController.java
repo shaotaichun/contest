@@ -27,7 +27,7 @@ import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*")
 @RestController
-@Api(value = "总工会比赛操作master", tags = "总工会比赛操作")
+@Api(value = "总工会比赛操作", tags = "总工会比赛操作")
 public class MyController {
     @Autowired
     private UsersRepository usersRepository;
@@ -53,7 +53,7 @@ public class MyController {
      */
     @Transactional
     @PostMapping(value = "/putInfo")
-    @ApiOperation(value = "远程调用接口tcshao")
+    @ApiOperation(value = "远程调用接口")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "body", name = "id", value = "参赛者ID", required = true, dataType = "Integer"),
             @ApiImplicitParam(paramType = "body", name = "nowRound", value = "当前关卡", required = true, dataType = "Integer"),
